@@ -1,0 +1,25 @@
+.color-blue {
+    @apply bg-blue-600;
+  }
+  .color-brown {
+    @apply bg-amber-700;
+  }
+  .color-black {
+    @apply bg-black;
+  }
+  .color-white {
+    @apply bg-white;
+  }
+  .color-red {
+    @apply bg-red-600;
+  }
+  .color-green {
+    @apply bg-green-600;
+  }
+  .color-orange {
+    @apply bg-orange-600;
+  }
+  .color-beige {
+    @apply bg-yellow-100;
+  }
+  
