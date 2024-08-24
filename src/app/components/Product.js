@@ -3,6 +3,7 @@ import productImages from "../data/product-images.json";
 import inventory from "../data/inventory.json";
 import Image from "next/image";
 import "./Product.css";
+import Link from "next/link";
 
 export default function Product() {
   const uniqueColors = {};
@@ -30,7 +31,11 @@ export default function Product() {
           );
 
           return (
-            <div className="font-medium leading-7" key={product.id}>
+            <Link
+              href={`/product/${product.product_id}?color=${productColors[0]}&size=null`}
+              className="font-medium leading-7"
+              key={product.id}
+            >
               {productImage && (
                 <Image
                   src={productImage.image_url}
@@ -73,7 +78,7 @@ export default function Product() {
                   ))}
                 </div>
               </div>
-            </div>
+            </Link>
           );
         })}
       </div>
