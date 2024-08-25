@@ -54,7 +54,7 @@ export default function Product() {
                 {inv && (
                   <div className="">
                     {inv.list_price === inv.sale_price ? (
-                      <p className="text-neutral-500 text-lg font-light tracking-widest">
+                      <p className="text-ne utral-500 text-lg font-light tracking-widest">
                         ${inv.sale_price}
                       </p>
                     ) : (

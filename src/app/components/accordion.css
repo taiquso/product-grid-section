@@ -1,0 +1,9 @@
+.accordion {
+  height: 0;
+  overflow: hidden;
+}
+
+.accordion.open {
+    overflow:visible;
+    height: auto;
+}
