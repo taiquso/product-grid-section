@@ -128,7 +128,7 @@ export default function ProductPage() {
 
   return (
     <section className="flex flex-col lg:flex-row rounded gap-8 bg-white m-4 p-4 py-12">
-      <div className="flex flex-col items-center lg:w-1/2 h-screen">
+      <div className="flex flex-col items-center lg:w-1/2">
         {currentImage && (
           <Image
             src={currentImage.image_url}
@@ -163,7 +163,7 @@ export default function ProductPage() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 lg:w-1/2">
         <h1 className="text-3xl md:text-5xl font-medium tracking-wider">
           {product.name}
         </h1>
